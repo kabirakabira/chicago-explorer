@@ -1,0 +1,141 @@
+/* COLORS */
+:root {
+  --blue1_primary: #0071bc;
+  --blue1_dark: #205493;
+  --blue1_darkest: #112e51;
+  --blue2_primary: #02bfe7;
+  --blue2_dark: #00a6d2;
+  --blue2_light: #9bdaf1;
+  --blue2_lightest: #e1f3f8;
+  --red_primary: #e31c3d;
+  --red_dark: #cd2026;
+  --red_darkest: #981b1e;
+  --red_light: #e59393;
+  --red_lightest: #f9dede;
+  --gold_primary: #fdb81e;
+  --gold_light: #f9c642;
+  --gold_lighter: #fad980;
+  --gold_lightest: #fff1d2;
+  --green_primary: #2e8540;
+  --green_light: #4aa564;
+  --green_lighter: #94bfa2;
+  --green_lightest: #e7f4e4;
+  --gray_primary: #5b616b;
+  --gray_dark: #323a45;
+  --gray_light: #aeb0b5;
+  --gray_lighter: #d6d7d9;
+  --gray_lightest: #f1f1f1;
+  --gray_warm: #494440;
+  --gray_warm_light: #e4e2e0;
+  --gray_cool_light: #dce4ef;
+}
+
+body {
+  margin-left: -15px;
+  margin-right: -15px;
+  box-sizing: border-box;
+  background-color: var(--blue2_lightest);
+  overflow-x: hidden;
+}
+
+.main-container {
+  padding-bottom: 30px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vh;
+  width: 100vw;
+  height: 10vh;
+  font-size: 5vh;
+  font-weight: 900;
+  font-family: 'Big Shoulders';
+  background-color: var(--blue1_darkest);
+  color: var(--blue2_light);
+}
+
+.red-title {
+  color: var(--red_primary);
+}
+
+.white-title {
+  color: var(--gray_lightest);
+}
+
+.content-container {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.map-container {
+  width: 40vw;
+  height: 95vh;
+  background-color: black;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  max-width: 55vw;
+}
+
+.symbology-selection-box {
+  justify-content: center;
+  text-align: center;
+  height: auto;
+}
+
+.selection.box {
+  display: flex;
+  gap: 20px;
+  height: 2vh;
+  flex: 1;
+}
+
+.top-boxes {
+  display: flex;
+  gap: 20px;
+  height: auto;
+}
+
+.info-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--gray_lighter);
+  text-align: center;
+  justify-content: center;
+}
+
+.top-left,
+.top-right {
+  flex: 1;
+}
+
+.bottom-large {
+  height: 30vh;
+  flex: 1;
+}
+
+.box-element-header {
+  font-family: 'Lora';
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--gray_dark);
+}
+
+.box-element-content {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+}
